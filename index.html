@@ -43,10 +43,69 @@
       bottom: 10px;
       font-size: 0.9rem;
       color: #555;
+      .profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
     }
+    .work {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #fff0f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  max-width: 800px;
+}
+
+.work h2 {
+  color: #880e4f;
+  margin-bottom: 1rem;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.work-item {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+.contact {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #fce4ec;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact a {
+  color: #d81b60;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
   </style>
 </head>
 <body>
+    <img src="meg.jpg" alt="Meg Karanu" class="profile-pic" />
   <h1>Hello, I’m Meg 👋</h1>
   <p>💼 Property Sales Advisor | 🎯 Admin Pro | 💻 Tech Explorer</p>
   
@@ -57,3 +116,30 @@
   <footer>Built with ❤️ by Meg Karanu</footer>
 </body>
 </html>
+<section class="work">
+    <section class="contact">
+  <h2>📬 Let’s Connect</h2>
+  <p>Want to work together, collaborate or just say hi?</p>
+  <p>Email me at <a href="mailto:megkaranu6@gmail.com">megkaranu6@gmail.com</a></p>
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/margaret-karanu-3b15b2a3" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Meg-techbyte" target="_blank">GitHub</a>
+  </div>
+</section>
+
+  <h2>✨ My Work</h2>
+  <div class="work-grid">
+    <div class="work-item">
+      <h3>🏡 The Saruni</h3>
+      <p>Lead Sales & Admin for Nairobi’s hottest property project. Managed leads, viewings, and closing deals.</p>
+    </div>
+    <div class="work-item">
+      <h3>📊 CRM Management</h3>
+      <p>Cleaned, tracked, and managed client data using Zoho & Excel. Keeping sales on point!</p>
+    </div>
+    <div class="work-item">
+      <h3>🧠 Tech Projects</h3>
+      <p>From GitHub simulations to personal website builds — always learning, always building.</p>
+    </div>
+  </div>
+</section>
