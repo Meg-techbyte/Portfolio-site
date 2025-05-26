@@ -4,28 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meg Karanu | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-    <style>
+  <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to right, #fce4ec, #f8bbd0);
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
+      overflow-x: hidden;
       color: #333;
       text-align: center;
     }
 
     h1 {
-        <img src="meg.jpg.png" alt="Meg Karanu" class="profile-pic"/>
-
       font-size: 3rem;
       color: #d81b60;
+      margin-top: 2rem;
       margin-bottom: 0.5rem;
     }
 
@@ -39,140 +33,68 @@
       padding: 1rem 2rem;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin-top: 1rem;
+      margin: 1.5rem auto;
+      max-width: 600px;
+    }
+
+    .about {
+      max-width: 800px;
+      padding: 2rem;
+      margin: 2rem auto;
+      background-color: #fff0f6;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      color: #444;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .about h2 {
+      color: #c2185b;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .about p {
+      font-size: 1.1rem;
     }
 
     footer {
-      position: absolute;
-      bottom: 10px;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
       font-size: 0.9rem;
       color: #555;
-      .profile-pic {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    margin-bottom: 1rem;
     }
-    .work {
-  margin-top: 3rem;
-  padding: 2rem;
-  background-color: #fff0f6;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  max-width: 800px;
-}
-
-.work h2 {
-  color: #880e4f;
-  margin-bottom: 1rem;
-}
-
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.work-item {
-  background: #ffffff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: left;
-}
-.contact {
-  margin-top: 3rem;
-  padding: 2rem;
-  background-color: #fce4ec;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.contact a {
-  color: #d81b60;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-}
-
-.socials {
-  margin-top: 1rem;
-}
-
   </style>
 </head>
 <body>
-    <img src="meg.jpg" alt="Meg Karanu" class="profile-pic" />
   <h1>Hello, I’m Meg 👋</h1>
   <p>💼 Property Sales Advisor | 🎯 Admin Pro | 💻 Tech Explorer</p>
-  
+
   <div class="tagline">
-   <p>This is just the beginning... ✨ Watch me build it up!</p>
+    <p>This is just the beginning... stay tuned for more!</p>
   </div>
-  <section class="about-me">
-  <h2>About Me</h2>
-  <p>
-    I'm Meg, a passionate Property Sales Advisor with a knack for admin and a love for tech! When I’m not helping clients find their dream homes, I’m exploring new tools and building cool stuff on the web. I believe in doing great work with heart 💖.
-  </p>
-</section>
-<div class="links">
-  <a href="https://www.linkedin.com/in/margaret-karanu-3b15b2a3" target="_blank">💼 LinkedIn</a>
-  <a href="mailto:karanumeg@gmail.com">📧 Email Me</a>
-  <a href="cv.pdf" download>📄 Download CV</a>
-</div>
-<section class="projects">
-  <h2>🚀 Projects</h2>
-  <div class="project-list">
-    <div class="project-card">
-      <h3>Practice Project 1</h3>
-      <p>My first GitHub Pages project built during training. It helped me understand version control and live deployment!</p>
-      <a href="https://meg-techbyte.github.io/Practice-project-1/" target="_blank">View Live</a>
-    </div>
-    
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>The site you're on now! A clean, beginner-friendly HTML/CSS project built from scratch.</p>
-      <a href="#" target="_blank">You’re Here 😄</a>
-    </div>
-  </div>
-</section>
 
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a dynamic professional with a passion for helping people make smart decisions—whether it's choosing their dream home, planning unforgettable getaways, or streamlining operations to keep everything running like clockwork.
+    </p>
+    <p>
+      With over three years in real estate sales and a solid background in administration and client service, I thrive on building relationships, closing deals, and creating seamless experiences from the first hello to the final handshake. I also have a soft spot for travel planning, where my love for logistics meets my love for adventure.
+    </p>
+    <p>
+      But my biggest (and best) title? Mama. Motherhood has sharpened my multitasking, boosted my emotional intelligence, and taught me more about negotiation, patience, and people skills than any textbook ever could.
+    </p>
+    <p>
+      Here on LinkedIn, I share insights on sales, travel, management, and the occasional mom moment that keeps life beautifully unpredictable.
+    </p>
+    <p>
+      Let’s connect and grow together—professionally and personally.
+    </p>
+  </section>
 
+  <footer>Built with ❤️ by Meg Karanu</footer>
 </body>
 </html>
-<section class="work">
-    <section class="contact">
-  <h2>📬 Let’s Connect</h2>
-  <p>Want to work together, collaborate or just say hi?</p>
-  <p>Email me at <a href="mailto:karanumeg@gmail.com">karanumeg@gmail.com</a></p>
-  <div class="socials">
-    <a href="https://www.linkedin.com/in/margaret-karanu-3b15b2a3" target="_blank">LinkedIn</a>
-    <a href="https://github.com/Meg-techbyte" target="_blank">GitHub</a>
-  </div>
-</section>
-
-  <h2>✨ My Work</h2>
-  <div class="work-grid">
-    <div class="work-item">
-      <h3>🏡 The Saruni</h3>
-      <p>Lead Sales & Admin for Nairobi’s hottest property project. Managed leads, viewings, and closing deals.</p>
-    </div>
-    <div class="work-item">
-      <h3>📊 CRM Management</h3>
-      <p>Cleaned, tracked, and managed client data using Zoho & Excel. Keeping sales on point!</p>
-    </div>
-    <div class="work-item">
-      <h3>🧠 Tech Projects</h3>
-      <p>From GitHub simulations to personal website builds — always learning, always building.</p>
-    </div>
-  </div>
-</section>
-
-<footer>Built with ❤️ by Meg Karanu</footer>
