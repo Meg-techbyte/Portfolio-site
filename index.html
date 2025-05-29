@@ -3,144 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Margaret Karanu | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Margaret Karanu Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d6a19b.js" crossorigin="anonymous"></script>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #ede7f6, #f3e5f5);
-      color: #2d2d2d;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      background-color: #6a1b9a;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header img {
-      width: 150px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      border: 4px solid white;
+      color: #3d3d3d;
+      overflow-x: hidden;
     }
 
     section {
-      padding: 3rem 1.5rem;
-      max-width: 900px;
-      margin: auto;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+      scroll-snap-align: start;
     }
 
-    h1, h2 {
-      color: #6a1b9a;
+    .container {
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #a18cd1, #fbc2eb);
+      color: white;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 100px;
+      object-fit: cover;
+      border: 5px solid white;
       margin-bottom: 1rem;
     }
 
-    .services, .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      max-width: 700px;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .icons {
+      margin-top: 1.5rem;
+    }
+
+    .icons a {
+      margin: 0 1rem;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+
+    .section-alt {
+      background: #f9f4ff;
     }
 
     .card {
       background: white;
-      padding: 1.5rem;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      text-align: center;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
-    .card i {
-      font-size: 2rem;
-      color: #8e24aa;
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      background-color: #4a148c;
-      color: white;
-      text-align: center;
-      padding: 1rem;
+    .footer {
       font-size: 0.9rem;
-    }
-
-    .contact a {
-      color: #6a1b9a;
-      text-decoration: none;
-      margin-right: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <img src="A_digital_portfolio_webpage_features_Margaret_Kara.png" alt="Margaret Karanu">
-    <h1>Margaret Karanu</h1>
-    <p>Property Sales Advisor | Admin Pro | Tech Explorer</p>
-  </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a dynamic professional with a passion for helping people make smart decisions—whether it's choosing their dream home, planning unforgettable getaways, or streamlining operations. With over three years in real estate sales and a solid background in administration and client service, I thrive on building relationships, closing deals, and creating seamless experiences from the first hello to the final handshake.
-      <br><br>
-      I'm also an enthusiastic travel planner, a tech-savvy operations whiz, and proudly, a mama. Motherhood has sharpened my multitasking, boosted my emotional intelligence, and deepened my people skills. 
-      <br><br>
-      Here, I share my journey and skills—let's grow together!
-    </p>
-  </section>
-
-  <section>
-    <h2>Services</h2>
-    <div class="services">
-      <div class="card">
-        <i class="fas fa-home"></i>
-        <h3>Real Estate Advisory</h3>
-        <p>Helping clients find and secure dream properties with confidence and ease.</p>
+  <div class="container">
+    <section class="hero">
+      <img src="./assets/margaret.png" alt="Margaret Karanu">
+      <h1>Margaret Karanu</h1>
+      <p>Property Sales Advisor | Admin Pro | Tech Explorer</p>
+      <div class="icons">
+        <a href="https://linkedin.com/in/margaret-karanu-3b15b2a3" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:megkaranu6@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
-      <div class="card">
-        <i class="fas fa-plane"></i>
-        <h3>Travel Planning</h3>
-        <p>Curating custom travel experiences that balance adventure and logistics.</p>
+    </section>
+
+    <section class="section-alt">
+      <h2>About Me</h2>
+      <p>I'm a dynamic professional passionate about helping people make smart decisions—whether it's choosing a dream home, planning unforgettable getaways, or streamlining operations. I bring 3+ years of real estate experience, a strong administrative background, and deep client-service skills. Oh, and I'm a mama—aka multitasking queen and negotiation ninja.</p>
+    </section>
+
+    <section>
+      <h2>What I Offer</h2>
+      <div class="card">🏠 <strong>Real Estate Advisory:</strong> Helping clients secure dream homes with confidence.</div>
+      <div class="card">🧳 <strong>Travel Planning:</strong> Curating fun and functional adventures.</div>
+      <div class="card">🧾 <strong>Admin & Ops:</strong> Keeping everything running like clockwork.</div>
+    </section>
+
+    <section class="section-alt">
+      <h2>Skills</h2>
+      <div class="card">🤝 Sales & Negotiation</div>
+      <div class="card">📞 Client Relations</div>
+      <div class="card">🛠️ Tools: Zoho, Canva, CRMs</div>
+      <div class="card">🧠 Project Management</div>
+      <div class="card">🌍 Travel Curation</div>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <div class="card">💼 <strong>IT Helpdesk Assistant</strong> — Compulynx Ltd (2016–2018)</div>
+      <div class="card">💼 <strong>Administrative Assistant</strong> — Lithosurv Mappers (2018–2020)</div>
+      <div class="card">💼 <strong>Sales Office Manager</strong> — The Saruni (2023–Present)</div>
+    </section>
+
+    <section class="section-alt">
+      <h2>Let’s Connect</h2>
+      <p>I'm always open to chatting about opportunities, collaborations, or sharing stories. Reach out!</p>
+      <div class="icons">
+        <a href="https://linkedin.com/in/margaret-karanu-3b15b2a3" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:megkaranu6@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
-      <div class="card">
-        <i class="fas fa-tasks"></i>
-        <h3>Admin & Ops</h3>
-        <p>Efficiently running behind-the-scenes tasks to keep systems flowing.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card"><i class="fas fa-chart-line"></i><h4>Sales & Negotiation</h4></div>
-      <div class="card"><i class="fas fa-headset"></i><h4>Client Relations</h4></div>
-      <div class="card"><i class="fas fa-laptop-code"></i><h4>Tech Tools (Zoho, Canva, CRM)</h4></div>
-      <div class="card"><i class="fas fa-calendar-check"></i><h4>Project Management</h4></div>
-      <div class="card"><i class="fas fa-globe-africa"></i><h4>Travel Curation</h4></div>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Let's Connect</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/margaret-karanu-3b15b2a3" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="mailto:karanumeg@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-    </p>
-  </section>
-
-  <footer>
-    Made with ❤️ by Margaret Karanu | 2025
-  </footer>
+      <div class="footer">Made with ❤️ by Margaret Karanu | 2025</div>
+    </section>
+  </div>
 </body>
 </html>
