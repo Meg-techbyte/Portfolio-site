@@ -6,13 +6,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-overflow-x: hidden;
-
   color: #333;
   text-align: center;
+  min-height: 100vh;
 }
+
 
 h1 {
   font-size: 3rem;
@@ -71,7 +69,6 @@ footer {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .links a {
@@ -177,3 +174,30 @@ footer {
 .about p {
   font-size: 1.1rem;
 }
+.work {
+  background-color: #fff0f6;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.work h2 {
+  color: #c2185b;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.work ul {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.work li {
+  margin-bottom: 1rem;
+}
+<link rel="stylesheet" href="style.css" />

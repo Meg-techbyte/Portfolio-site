@@ -3,73 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meg Karanu | Portfolio</title>
+  <title>Margaret Karanu | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-   #about {
-  max-width: 800px;
-  padding: 2rem;
-  background-color: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  margin: 2rem auto;
-  line-height: 1.7;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-#about h2 {
-  font-size: 2rem;
-  color: #d81b60;
-  margin-bottom: 1rem;
-}
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #ede7f6, #f3e5f5);
+      color: #2d2d2d;
+      scroll-behavior: smooth;
+    }
 
-#about p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: #555;
-}
-</style>
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 4px solid white;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #6a1b9a;
+      margin-bottom: 1rem;
+    }
+
+    .services, .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .card i {
+      font-size: 2rem;
+      color: #8e24aa;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .contact a {
+      color: #6a1b9a;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I’m Meg 👋</h1>
-  <p>💼 Property Sales Advisor | 🎯 Admin Pro | 💻 Tech Explorer</p>
 
-  <div class="tagline">
-    <p>This is just the beginning... stay tuned for more!</p>
-  </div>
+  <header>
+    <img src="A_digital_portfolio_webpage_features_Margaret_Kara.png" alt="Margaret Karanu">
+    <h1>Margaret Karanu</h1>
+    <p>Property Sales Advisor | Admin Pro | Tech Explorer</p>
+  </header>
 
-  <section id="about">
-  <h2>About Me</h2>
-  <p>
-    I’m a dynamic professional with a passion for helping people make smart decisions—
-    whether it's finding their dream home, planning unforgettable getaways, or
-    streamlining operations for smoother systems.
-  </p>
-  <p>
-    With over three years in real estate sales and a solid background in administration and client service,
-    I thrive on building relationships, closing deals, and creating seamless experiences from the first hello
-    to the final handshake. My love for travel planning is where my inner adventurer meets my logistical brain,
-    bringing joy and order in perfect balance.
-  </p>
-  <p>
-    But the role I cherish most? Mama. Motherhood has made me a better multitasker, deepened my empathy,
-    and sharpened my people skills in ways no training ever could.
-  </p>
-  <p>
-    This portfolio is a growing reflection of who I am—professionally and personally.
-    Let’s connect and create something amazing!
-  </p>
-</section>
-<section class="work">
-  <h2>My Work</h2>
-  <p>Check out some of my favorite projects below:</p>
-  <ul>
-    <li><strong>Real Estate Sales:</strong> Closed over 50 property deals in the past 3 years at The Saruni.</li>
-    <li><strong>Admin & CRM:</strong> Streamlined operations and lead tracking using Zoho, Google Workspace & more.</li>
-    <li><strong>IT Helpdesk Assistant (Compulynx):</strong> Resolved technical issues, supported end users, and maintained IT systems for seamless daily operations (2016–2018).</li>
-    <li><strong>Tech Projects:</strong> Currently building this portfolio and learning web development!</li>
-  </ul>
-</section>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm a dynamic professional with a passion for helping people make smart decisions—whether it's choosing their dream home, planning unforgettable getaways, or streamlining operations. With over three years in real estate sales and a solid background in administration and client service, I thrive on building relationships, closing deals, and creating seamless experiences from the first hello to the final handshake.
+      <br><br>
+      I'm also an enthusiastic travel planner, a tech-savvy operations whiz, and proudly, a mama. Motherhood has sharpened my multitasking, boosted my emotional intelligence, and deepened my people skills. 
+      <br><br>
+      Here, I share my journey and skills—let's grow together!
+    </p>
+  </section>
 
+  <section>
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">
+        <i class="fas fa-home"></i>
+        <h3>Real Estate Advisory</h3>
+        <p>Helping clients find and secure dream properties with confidence and ease.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-plane"></i>
+        <h3>Travel Planning</h3>
+        <p>Curating custom travel experiences that balance adventure and logistics.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-tasks"></i>
+        <h3>Admin & Ops</h3>
+        <p>Efficiently running behind-the-scenes tasks to keep systems flowing.</p>
+      </div>
+    </div>
+  </section>
 
-  <footer>Built with ❤️ by Meg Karanu</footer>
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><i class="fas fa-chart-line"></i><h4>Sales & Negotiation</h4></div>
+      <div class="card"><i class="fas fa-headset"></i><h4>Client Relations</h4></div>
+      <div class="card"><i class="fas fa-laptop-code"></i><h4>Tech Tools (Zoho, Canva, CRM)</h4></div>
+      <div class="card"><i class="fas fa-calendar-check"></i><h4>Project Management</h4></div>
+      <div class="card"><i class="fas fa-globe-africa"></i><h4>Travel Curation</h4></div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Let's Connect</h2>
+    <p>
+      <a href="https://www.linkedin.com/in/margaret-karanu-3b15b2a3" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:karanumeg@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    </p>
+  </section>
+
+  <footer>
+    Made with ❤️ by Margaret Karanu | 2025
+  </footer>
 </body>
 </html>
