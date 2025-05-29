@@ -3,150 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Margaret Karanu Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2d9d6a19b.js" crossorigin="anonymous"></script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+  <title>Margaret Karanu | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    body {
-      font-family: 'Inter', sans-serif;
-      color: #3d3d3d;
-      overflow-x: hidden;
-    }
-
-    section {
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 2rem;
-      scroll-snap-align: start;
-    }
-
-    .container {
-      scroll-snap-type: y mandatory;
-      overflow-y: scroll;
-      height: 100vh;
-    }
-
-    .hero {
-      background: linear-gradient(120deg, #a18cd1, #fbc2eb);
-      color: white;
-      text-align: center;
-    }
-
-    .hero img {
-      width: 180px;
-      height: 180px;
-      border-radius: 100px;
-      object-fit: cover;
-      border: 5px solid white;
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      max-width: 700px;
-      font-size: 1.1rem;
-      text-align: center;
-    }
-
-    .icons {
-      margin-top: 1.5rem;
-    }
-
-    .icons a {
-      margin: 0 1rem;
-      font-size: 1.5rem;
-      color: #ffffff;
-    }
-
-    .section-alt {
-      background: #f9f4ff;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      width: 80%;
-      max-width: 600px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .footer {
-      font-size: 0.9rem;
-      margin-top: 2rem;
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <section class="hero">
-      <img src="./assets/margaret.png" alt="Margaret Karanu">
-      <h1>Margaret Karanu</h1>
-      <p>Property Sales Advisor | Admin Pro | Tech Explorer</p>
-      <div class="icons">
-        <a href="https://linkedin.com/in/margaret-karanu-3b15b2a3" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:megkaranu6@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-    </section>
+  <div class="section hero">
+    <img src="assets/margaret.png" alt="Margaret Karanu" class="profile-pic" />
+    <h1>Margaret Karanu</h1>
+    <h2>Property Sales Advisor | Admin Pro | Tech Explorer</h2>
+  </div>
 
-    <section class="section-alt">
-      <h2>About Me</h2>
-      <p>I'm a dynamic professional passionate about helping people make smart decisions—whether it's choosing a dream home, planning unforgettable getaways, or streamlining operations. I bring 3+ years of real estate experience, a strong administrative background, and deep client-service skills. Oh, and I'm a mama—aka multitasking queen and negotiation ninja.</p>
-    </section>
+  <div class="section about">
+    <h2>About Me</h2>
+    <p>
+      I'm a dynamic professional with a passion for helping people make smart decisions—whether it's choosing their dream home, planning unforgettable getaways, or streamlining operations.
+      With over three years in real estate sales and a solid background in administration and client service, I thrive on building relationships, closing deals, and creating seamless experiences from the first hello to the final handshake.
+    </p>
+    <p>
+      I'm also an enthusiastic travel planner, a tech-savvy operations whiz, and proudly, a mama. Motherhood has sharpened my multitasking, boosted my emotional intelligence, and deepened my people skills.
+    </p>
+  </div>
 
-    <section>
-      <h2>What I Offer</h2>
-      <div class="card">🏠 <strong>Real Estate Advisory:</strong> Helping clients secure dream homes with confidence.</div>
-      <div class="card">🧳 <strong>Travel Planning:</strong> Curating fun and functional adventures.</div>
-      <div class="card">🧾 <strong>Admin & Ops:</strong> Keeping everything running like clockwork.</div>
-    </section>
+  <div class="section services">
+    <h2>Services</h2>
+    <ul>
+      <li><strong>Real Estate Advisory:</strong> Helping clients find and secure dream properties with confidence and ease.</li>
+      <li><strong>Travel Planning:</strong> Curating custom travel experiences that balance adventure and logistics.</li>
+      <li><strong>Admin & Ops:</strong> Efficiently running behind-the-scenes tasks to keep systems flowing.</li>
+    </ul>
+  </div>
 
-    <section class="section-alt">
-      <h2>Skills</h2>
-      <div class="card">🤝 Sales & Negotiation</div>
-      <div class="card">📞 Client Relations</div>
-      <div class="card">🛠️ Tools: Zoho, Canva, CRMs</div>
-      <div class="card">🧠 Project Management</div>
-      <div class="card">🌍 Travel Curation</div>
-    </section>
+  <div class="section skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Sales & Negotiation</li>
+      <li>Client Relations</li>
+      <li>Tech Tools (Zoho, Canva, CRM)</li>
+      <li>Project Management</li>
+      <li>Travel Curation</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Work Experience</h2>
-      <div class="card">💼 <strong>IT Helpdesk Assistant</strong> — Compulynx Ltd (2016–2018)</div>
-      <div class="card">💼 <strong>Administrative Assistant</strong> — Lithosurv Mappers (2018–2020)</div>
-      <div class="card">💼 <strong>Sales Office Manager</strong> — The Saruni (2023–Present)</div>
-    </section>
+  <div class="section experience">
+    <h2>Work Experience</h2>
+    <p><strong>IT Helpdesk Assistant</strong> — Compulynx Ltd (2016–2018)</p>
+    <p><strong>Administrative Assistant</strong> — Lithosurv Mappers (2018–2020)</p>
+    <p><strong>Email Outreach Rockstar</strong> — Squareless Media (2021–2022)</p>
+    <p><strong>Sales Office Manager</strong> — The Saruni (2023–Present)</p>
+  </div>
 
-    <section class="section-alt">
-      <h2>Let’s Connect</h2>
-      <p>I'm always open to chatting about opportunities, collaborations, or sharing stories. Reach out!</p>
-      <div class="icons">
-        <a href="https://linkedin.com/in/margaret-karanu-3b15b2a3" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:megkaranu6@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-      <div class="footer">Made with ❤️ by Margaret Karanu | 2025</div>
-    </section>
+  <div class="section contact">
+    <h2>Let's Connect</h2>
+    <p><a href="https://www.linkedin.com/in/margaret-karanu-3b15b2a3" target="_blank">LinkedIn</a> | <a href="mailto:megkaranu6@gmail.com">Email</a></p>
+    <p class="footer">Made with ❤️ by Margaret Karanu | 2025</p>
   </div>
 </body>
 </html>
